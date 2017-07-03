@@ -47,6 +47,7 @@ ul, ol {
   margin: 0;
   padding: 0;
   line-height: 1.5rem;
+  padding-left: 1.5rem;
 }
 
 table {
@@ -328,13 +329,14 @@ article.sn > .article-body h3 {
 
 article.sn > .article-body ul,
 article.sn > .article-body ol {
-  margin: 1.5rem 0;
+  margin: 0rem 0;
   padding-left: 1.5rem;
+  line-height: 1.0rem;
 }
 
 article.sn > .article-body li {
-  padding-bottom: .5rem;
-  line-height: 1.5rem;
+  padding-bottom: 0rem;
+  line-height: 1.0rem;
 }
 
 article.sn > .article-body li:last-child {
