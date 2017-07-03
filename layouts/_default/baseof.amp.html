@@ -36,6 +36,9 @@
         <div class="logo">
           <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         </div>
+        <div class="subtitle">
+          <a>{{ .Site.Params.subtitle }}</a>
+        </div>
       </div>
     </header>
 
@@ -47,11 +50,11 @@
 
     <footer class="l-footer">
       <div class="l-container">
-        <p>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}<span class="h-logo">&copy; {{ .Site.Title }}</span>{{ end }}</p>
-        <aside>
-          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
-          <p><a href="https://github.com/dim0627/hugo_theme_robust">Robust</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
-        </aside>
+        <div class="copyright">
+          <center>
+            <a>{{ with .Site.Copyright }}{{ . | safeHTML }}{{ else }}&copy; 2017 {{ .Site.Title }}{{ end }}</a>
+          </center>
+        </div>
       </div>
     </footer>
 
