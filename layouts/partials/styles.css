@@ -211,7 +211,7 @@ article.li .summary {
   font-size: .8rem;
   height: 6rem;
   overflow: hidden;
-  margin-top: 1rem;
+  margin-top: .5rem;
 }
 
 article.lism {
@@ -346,7 +346,7 @@ article.sn > .article-body li:last-child {
 }
 article.sn > .article-body p {
   margin: 1rem 0;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 article.sn > .article-body strong,
@@ -428,6 +428,7 @@ article.sn > .article-body figure {
 
 article.sn > .article-body figure img,
 article.sn > .article-body figure amp-img {
+  border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   max-width: 100%;
 }
@@ -446,7 +447,7 @@ article.sn > .article-body figcaption {
 }
 
 .facts i {
-  color: #cfd8dc;
+  color: #ccc;
   margin-right: .5em;
 }
 
@@ -703,7 +704,7 @@ section.footer > header a {
 }
 
 .thumb {
-  background-image: url({{ .Site.BaseURL }}images/default.jpg);
+  background-image: url({{ .Site.BaseURL }}images/material.jpg);
   background-size: cover;
 }
 
