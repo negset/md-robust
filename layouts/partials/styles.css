@@ -338,7 +338,7 @@ article.sn > .article-body ol {
 
 article.sn > .article-body li {
   padding-bottom: 0rem;
-  line-height: 1.0rem;
+  line-height: 1.5rem;
 }
 
 article.sn > .article-body li:last-child {
@@ -447,7 +447,7 @@ article.sn > .article-body figcaption {
 }
 
 .facts i {
-  color: #ccc;
+  color: #cfd8dc;
   margin-right: .5em;
 }
 
