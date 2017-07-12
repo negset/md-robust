@@ -25,7 +25,9 @@
 
     {{ range $key, $value := .Site.Taxonomies }}
     <section class="sidebar">
-      <header>{{ $key | upper }}</header>
+      <header>
+        <a href="{{ $.Site.BaseURL }}{{ $key | urlize }}/">{{ $key | upper }}</a>
+      </header>
       <div>
         <ul class="terms">
           {{ range first 10 $value.ByCount }}<li><a href="{{ $.Site.BaseURL}}{{ $key }}/{{ .Name | urlize }}">{{ .Name }}</a></li>{{ end }}
