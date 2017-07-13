@@ -14,6 +14,7 @@
     {{ end }}
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
+    {{ if .IsHome }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
     {{ block "meta" . }}{{ end }}
     <style amp-custom>
       {{ replaceRE " +" " " (replaceRE "\n" "" (partial "styles.css" .)) | safeCSS }}
