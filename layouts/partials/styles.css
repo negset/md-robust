@@ -101,7 +101,7 @@ aside.f {
   box-shadow: 0 2px 5px rgba(0,0,0,0.30), 0 0px 5px rgba(0,0,0,0.20);
   padding: 2rem 0;
   text-align: center;
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .l-footer {
@@ -184,8 +184,7 @@ article.li {
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   height: 20rem;
   overflow: hidden;
-  margin: 1rem 0 ;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 article.li > a {
