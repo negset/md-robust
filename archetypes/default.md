@@ -1,9 +1,8 @@
 +++
 title = ""
 date = {{ .Date }}
-thumbnail = "images/material.jpg"
 slug = ""
-categories = [""]
+thumbnail = "images/material.jpg"
 tags = ["", ""]
 draft = true
 +++
