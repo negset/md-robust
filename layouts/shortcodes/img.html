@@ -1,6 +1,8 @@
 <figure{{ if .Get "class" }} class="{{ .Get "class" }}"{{ end }}>
   <center>
-    <img src="{{ $.Site.BaseURL }}{{ .Get "src" }}" alt="{{ .Get "caption" }}" width="{{ .Get "w" }}" height="{{ .Get "h" }}">
+    <a href="{{ $.Site.BaseURL }}{{ .Get "src" }}" data-lightbox="images">
+      <img src="{{ $.Site.BaseURL }}{{ .Get "src" }}" alt="{{ .Get "caption" }}" width="{{ .Get "w" }}" height="{{ .Get "h" }}">
+    </a>
     {{ if .Get "caption" }}
     <figcaption>
       {{ if .Get "href" }}
