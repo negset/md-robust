@@ -218,6 +218,7 @@ article.lism {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   margin: .5rem 0;
+  height: 5rem;
 }
 
 article.lism::after {
@@ -443,6 +444,7 @@ article.sn > .article-body figcaption {
 
 .facts li {
   display: inline;
+  white-space: nowrap;
   font-size: .8rem;
   margin-right: 1rem;
 }
