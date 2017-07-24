@@ -1,5 +1,13 @@
 {{ define "title" }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ end }}
 
+{{ define "meta" }}
+{{ range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end }}
+{{ partial "single_meta.html" . }}
+{{ partial "single_json_ld.html" . }}
+{{ end }}
+
 {{ define "main" }}
 <div class="mrow">
   <div class="mcol c8">

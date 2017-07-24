@@ -6,10 +6,10 @@
       "@type": "WebPage",
       "@id":"{{ .Site.BaseURL }}"
     },
-    "headline": "{{ .Title }} - {{ .Site.Title }}",
+    "headline": "{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}{{ .Params.thumbnail | default "images/default.png" }}",
+      "url": "{{ .Site.BaseURL }}{{ .Params.thumbnail | default "images/material.jpg" }}",
       "height": 800,
       "width": 800
     },
@@ -29,6 +29,6 @@
         "height": 60
       }
     },
-    "description": "{{ .Description | default .Summary }}"
+    "description": "{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description | default .Summary }}{{ end }}"
   }
 </script>
