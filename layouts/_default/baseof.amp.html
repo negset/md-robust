@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ⚡>
+<html amp>
   <head>
     {{ partial "meta.html" . }}
 
@@ -7,14 +7,10 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
-    {{ with .Site.Params.googlefonts }}
-    <link href="{{ . }}" rel="stylesheet">
-    {{ else }}
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
-    {{ end }}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
     <title>{{ block "title" . }}{{ end }}{{ .Site.Title }}</title>
-    {{ if .IsHome }}<meta name="description" content="{{ .Site.Params.description }}">{{ end }}
     {{ block "meta" . }}{{ end }}
     <style amp-custom>
       {{ replaceRE " +" " " (replaceRE "\n" "" (partial "styles.css" .)) | safeCSS }}
@@ -61,4 +57,3 @@
 
   </body>
 </html>
-

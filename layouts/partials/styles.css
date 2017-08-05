@@ -654,7 +654,9 @@ section.footer > header a {
 
 .adj header {
   font-weight: 700;
-  font-size: .9rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #2196F3;
 }
 
 .toc {

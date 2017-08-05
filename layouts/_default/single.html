@@ -18,13 +18,13 @@
       <div class="mrow">
         {{ with .PrevInSection }}
         <div class="mcol c6">
-          <center><font color="#2196F3"><header>Previous Article</header></font></center>
+          <header><i class="fa fa-angle-double-left" aria-hidden="true"></i> PREV</header>
           {{ .Render "li_sm" }}
         </div>
         {{ end }}
         {{ with .NextInSection }}
         <div class="mcol c6">
-          <center><font color="#2196F3"><header>Next Article</header></font></center>
+          <header>NEXT <i class="fa fa-angle-double-right" aria-hidden="true"></i></header>
           {{ .Render "li_sm" }}
         </div>
         {{ end }}
