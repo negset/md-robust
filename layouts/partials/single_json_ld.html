@@ -9,15 +9,15 @@
     "headline": "{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}",
     "image": {
       "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}{{ .Params.thumbnail | default "images/material.jpg" }}",
-      "height": 800,
-      "width": 800
+      "url": "{{ .Site.BaseURL }}{{ .Params.thumbnail | default "images/defalut.png" }}",
+      "height": 1280,
+      "width": 720
     },
     "datePublished": "{{ .Date.Format "2006-01-02T15:04:05JST" }}",
     "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05JST" }}",
     "author": {
       "@type": "Person",
-      "name": "{{ .Site.Title }}"
+      "name": "{{ .Site.Params.author }}"
     },
     "publisher": {
       "@type": "Organization",
@@ -25,8 +25,8 @@
       "logo": {
         "@type": "ImageObject",
         "url": "{{ .Site.BaseURL }}images/logo.png",
-        "width": 600,
-        "height": 60
+        "width": 500,
+        "height": 500
       }
     },
     "description": "{{ if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Description | default .Summary }}{{ end }}"

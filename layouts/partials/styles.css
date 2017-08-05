@@ -531,7 +531,7 @@ section.footer > header a {
   text-align: center;
   vertical-align: top;
   height: 30px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   background-color: #fff;
 }
 
@@ -711,7 +711,7 @@ section.footer > header a {
 }
 
 .thumb {
-  background-image: url({{ .Site.BaseURL }}images/material.jpg);
+  background-image: url({{ .Site.BaseURL }}images/default.png);
   background-size: cover;
   background-position: center;
 }
