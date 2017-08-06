@@ -19,9 +19,12 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+----------------------------------------------------------------------------------
 
-The major design pattern of this theme was abstracted from Daisuke Tsuji's hugo_theme_robust, which is subject to the same license.
+The major design pattern of this theme was abstracted from 
+Daisuke Tsuji's hugo_theme_robust, which is subject to the same license.
 Here is the original copyright notice for hugo_theme_robust:
+
 
 The MIT License (MIT)
 
