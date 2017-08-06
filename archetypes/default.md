@@ -2,7 +2,7 @@
 title = ""
 date = {{ .Date }}
 slug = ""
-thumbnail = "images/material.jpg"
+thumbnail = "images/default.png"
 tags = ["", ""]
 draft = true
 +++
