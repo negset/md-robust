@@ -2,9 +2,9 @@
 {{ if gt $pag.TotalPages 1 }}
 <ul class="pagination">
   {{ if $pag.HasPrev }}
-  <li><a href="{{ $pag.Prev.URL }}"><</a></li>
+  <li><a href="{{ $pag.Prev.URL }}"><i class="fa fa-angle-left"></i></a></li>
   {{ else }}
-  <li class="disabled"><a><</a></li>
+  <li class="disabled"><a><i class="fa fa-angle-left"></i></a></li>
   {{ end }}
 
   {{ range $pag.Pagers }}
@@ -16,9 +16,9 @@
   {{ end }}
 
   {{ if $pag.HasNext }}
-  <li><a href="{{ $pag.Next.URL }}">></a></li>
+  <li><a href="{{ $pag.Next.URL }}"><i class="fa fa-angle-right"></i></a></li>
   {{ else }}
-  <li class="disabled"><a>></a></li>
+  <li class="disabled"><a><i class="fa fa-angle-right"></i></a></li>
   {{ end }}
 </ul>
 {{ end }}
