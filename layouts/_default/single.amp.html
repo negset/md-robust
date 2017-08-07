@@ -10,15 +10,15 @@
 
 <div class="adj">
   <div class="mrow">
-    {{ with .PrevInSection }}
+    {{ with .NextInSection }}
     <div class="mcol c6">
-      <header><i class="fa fa-angle-double-left" aria-hidden="true"></i> PREV</header>
+      <header><i class="fa fa-angle-double-left" aria-hidden="true"></i> NEXT</header>
       {{ .Render "li_sm" }}
     </div>
     {{ end }}
-    {{ with .NextInSection }}
+    {{ with .PrevInSection }}
     <div class="mcol c6">
-      <header>NEXT <i class="fa fa-angle-double-right" aria-hidden="true"></i></header>
+      <header>PREV <i class="fa fa-angle-double-right" aria-hidden="true"></i></header>
       {{ .Render "li_sm" }}
     </div>
     {{ end }}
