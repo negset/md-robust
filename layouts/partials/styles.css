@@ -722,7 +722,7 @@ section.footer > header a {
   background-position: center;
 }
 
-.thumb-icon {
+.thumb-author {
   background-image: url({{ $.Site.BaseURL }}images/icon.png);
 }
 
