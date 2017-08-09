@@ -252,6 +252,12 @@ article.lism .title {
   margin-bottom: .25rem;
 }
 
+article.lism .text {
+  font-size: .7rem;
+  font-weight: 400;
+  color: #555;
+}
+
 article.sn {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
@@ -714,6 +720,10 @@ section.footer > header a {
   background-image: url({{ .Site.BaseURL }}images/default.png);
   background-size: cover;
   background-position: center;
+}
+
+.thumb-icon {
+  background-image: url({{ $.Site.BaseURL }}images/icon.png);
 }
 
 {{ range $p := .Site.Pages }}
