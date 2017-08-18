@@ -373,26 +373,20 @@ article.sn > .article-body em {
 article.sn > .article-body code,
 article.sn > .article-body pre {
   font-family: Menlo, Consolas, monospace;
-  font-size: .7rem;
+  font-size: .8rem;
 }
 
 article.sn > .article-body pre {
-  background-color: #333;
-  color: #ee6e73;
+  background-color: #002b36;
+  color: #839496;
   line-height: 1rem;
-  margin: 1.5rem -2rem;
   overflow: auto;
-}
-
-@media (max-width: 768px) {
-  article.sn > .article-body pre {
-    margin: 1.5rem -1rem;
-  }
+  border-radius: 3px;
 }
 
 article.sn > .article-body pre > code {
   display: block;
-  padding: 1rem 2rem;
+  padding: .7rem 1.5rem;
 }
 
 @media (max-width: 768px) {
