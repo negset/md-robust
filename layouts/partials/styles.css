@@ -236,7 +236,7 @@ article.lism .inner {
   display: table-cell;
   vertical-align: middle;
   height: 5rem;
-  padding-left: .5rem;
+  padding: 0 .5rem;
 }
 
 article.lism .thumb {
