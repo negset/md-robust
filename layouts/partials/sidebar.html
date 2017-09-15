@@ -1,24 +1,8 @@
 <aside class="l-sidebar">
 
   <div class="sections sidebar">
-    <section class="sidebar">
-      <header>AUTHOR</header>
-      <div>
-        <div class="articles sm">
-          <article class="lism">
-            <div class="thumb thumb-author"></div>
-            <div class="inner">
-              <div class="title">{{ .Site.Params.author}}</div>
-              <div class="text">{{ .Site.Params.profile}}</div>
-              <ul class="facts sm">
-                <li><i class="fa fa-github" aria-hidden="true"></i><a href="{{ .Site.Params.github }}" target= _blank>GitHub</a></li>
-                <li><i class="fa fa-google-plus" aria-hidden="true"><a href="{{ .Site.Params.googleplus }}" target= _blank></i>Google+</a></li>
-              </ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+
+    {{ partial "author.html" . }}
 
     <section class="sidebar">
       <header>LATESTS</header>
@@ -45,6 +29,6 @@
     {{ end }}
   </div>
 
-  <div class="p7button" data-button-text="通知を受け取る"></div>
+  <div class="p7button" data-button-text="購読する"></div>
 
 </aside>
