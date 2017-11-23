@@ -354,7 +354,7 @@ article.sn > .article-body li:last-child {
 }
 article.sn > .article-body p {
   margin: 1rem 0;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 
 article.sn > .article-body strong,
@@ -411,6 +411,7 @@ article.sn > .article-body blockquote {
   font-size: .8rem;
   padding: .125rem 1rem;
   margin: 1.5rem 0;
+  background-color: #eee;
 }
 
 @media (max-width: 768px) {
@@ -421,7 +422,7 @@ article.sn > .article-body blockquote {
 
 article.sn > .article-body blockquote p {
   margin: .5rem 0;
-  line-height: 1rem;
+  line-height: 1.3rem;
 }
 
 article.sn > .article-body figure {
